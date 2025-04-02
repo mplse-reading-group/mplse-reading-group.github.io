@@ -46,7 +46,9 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt install libpcre2-dev
+# libpcre2 version on Ubuntu 20.04 LTS is too old
+#        sudo apt install libpcre2-dev
+        wget https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.gz && tar -xf pcre2-10.45.tar.gz && cd pcre2-10.45 && ./configure && make install
         sudo cpanm YAML::XS
         sudo cpanm Carp::Assert
         sudo cpanm Try::Tiny
