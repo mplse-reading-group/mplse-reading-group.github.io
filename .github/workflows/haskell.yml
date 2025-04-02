@@ -46,7 +46,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        wget https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.gz && tar -xf pcre2-10.45.tar.gz && cd pcre2-10.45 && ./configure && make install
+        wget https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.gz && tar -xf pcre2-10.45.tar.gz && cd pcre2-10.45 && ./configure && make && sudo make install
         sudo cpanm YAML::XS
         sudo cpanm Carp::Assert
         sudo cpanm Try::Tiny
