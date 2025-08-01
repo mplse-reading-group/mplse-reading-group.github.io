@@ -37,6 +37,97 @@
     </head>
     <body>
         <main role="main">
+            <h1>2025-winter</h1>
+                <table style="width:100%;">
+        <colgroup>
+            <col style="width: 1%">
+            <col style="width: 2%">
+            <col style="width: 95%">
+        </colgroup>
+        <thead>
+            <tr class="header">
+                <th>Speaker</th>
+                <th>Time ∧ Location</th>
+                <th>Paper</th>
+            </tr>
+            <tr class="odd">
+                <th></th>
+                <th colspan="2">Abstract</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <tr class="odd">
+            <td>Thomas J. Porter</td>
+            <td>January 17th, 4-5pm in 2901 BBB</td>
+            <td><a href="https://popl25.sigplan.org/details/wits-2025-papers/2/Incremental-Bidirectional-Typing-via-Order-Maintenance">Incremental Bidirectional Typing via Order Maintenance</a></td>
+        </tr>
+        <tr class="even">
+            <td></td>
+            <td colspan="2">In live programming systems, editor services such as type checking and evaluation are continually provided while the user is editing the program. The live paradigm offers benefits to developer experience and productivity. Generally editor services are stateless transformations that take only the current the program text as input, and compute the result from scratch. This presents a challenge to implementing live editors at scale, since the execution time will grow with the size of the program, and at some point will take too long to be recomputed between each edit.<br>This work presents a solution in the form of an incremental algorithm for maintaining a total static analysis of a program in a simple gradually typed language. Each edit action triggers an update to an enriched program data structure, yielding updated static information more efficiently than a fresh pass would. The algorithm is presented as a small-step dynamics to propagate updates through the enriched program data structure. Most updates flow according to the base bidirectional type system. Additional pointers are maintained to connect bound variables and their binding locations. Order maintenance data structures are employed to efficiently maintain these pointers and to prioritize the order of update propagation. We prove this algorithm equivalent to naive reanalysis in the Agda theorem prover. We implement the algorithm in the Incremental Hazelnut language workbench. We evaluate its performance on edit traces from real users as well as synthetic examples.<br></td>
+        </tr>
+
+        <tr class="odd">
+            <td>Matthew Keenan</td>
+            <td>February 14th, 4-5pm in 4901 BBB</td>
+            <td><a href="https://arxiv.org/pdf/2311.13995">Explicit Refinement Types</a></td>
+        </tr>
+        <tr class="even">
+            <td></td>
+            <td colspan="2">We present 𝜆ert, a type theory supporting refinement types with explicit proofs. Instead of solving refinement constraints with an SMT solver like DML and Liquid Haskell, our system requires and permits programmers to embed proofs of properties within the program text, letting us support a rich logic of properties including quantifiers and induction. We show that the type system is sound by showing that every refined program erases to a simply-typed program, and by means of a denotational semantics, we show that every erased program has all of the properties demanded by its refined type. All of our proofs are formalised in Lean 4.<br></td>
+        </tr>
+
+        <tr class="odd">
+            <td>Russell Rozenbaum</td>
+            <td>April 4th, 4-5pm in 4901 BBB</td>
+            <td><a href>Structure-Level Interactions in LLM-Based Coding Agents</a></td>
+        </tr>
+        <tr class="even">
+            <td></td>
+            <td colspan="2">This work explores the development of structure-based action languages for LLM-powered coding agents, moving beyond traditional line-based approaches. We hypothesize that line-based interactions undermine the semantical abstractions naturally used when coding. Our research integrates LLM agents with Hazel, a live functional programming environment capable of structure-level editing and semantic analysis even in incomplete programs. By equipping agents with higher-level, structure-based actions, we aim to enhance their code generation capabilities. Additionally, we develop an interactive user interface for human-agent collaboration. This research contributes to both automated program synthesis and programming education, while addressing the semantic contextualization challenges faced by existing LLM-based coding assistants.<br></td>
+        </tr>
+
+        <tr class="odd">
+            <td>Thomas J. Porter</td>
+            <td>April 25th, 4-5pm in 4901 BBB</td>
+            <td><a href="https://dl.acm.org/doi/pdf/10.1145/3720426">QED in Context</a></td>
+        </tr>
+        <tr class="even">
+            <td></td>
+            <td colspan="2">Interactive theorem provers, or proof assistants, are important tools across many areas of computer science and mathematics, but even experts find them challenging to use effectively. To improve their design, we need a deeper, user-centric understanding of proof assistant usage. We present the results of an observation study of proof assistant users. We use contextual inquiry method- ology, observing 30 participants doing their everyday work in Rocq and Lean. We qualitatively analyze their experiences to surface four observations: that proof writers iterate on their proofs by reacting to and incorpo- rating feedback from the proof assistant; that proof progress often involves challenging conversations with the proof assistant; that proofs are constructed in consultation with a wide array of external resources; and that proof writers are guided by design considerations that go beyond “getting to QED.” Our documentation of these themes clarifies what proof assistant usage looks like currently and identifies potential opportunities that researchers should consider when working to improve the usability of proof assistants.<br></td>
+        </tr>
+
+        <tr class="odd">
+            <td>Steven Schaefer</td>
+            <td>May 9th, 4-5pm in 4901 BBB</td>
+            <td><a href="https://doi.org/10.1145/3453483.3454053">HASH(0x55ca8fe6bb60)</a></td>
+        </tr>
+        <tr class="even">
+            <td></td>
+            <td colspan="2">Parsers are security-critical components of many software systems, and verified parsing therefore has a key role to play in secure software design. However, existing verified parsers for context-free grammars are limited in their expressiveness, termination properties, or performance characteristics. They are only compatible with a restricted class of grammars, they are not guaranteed to terminate on all inputs, or they are not designed to be performant on grammars for real-world programming languages and data formats.<br>In this work, we present CoStar, a verified parser that addresses these limitations. The parser is implemented with the Coq Proof Assistant and is based on the ALL(*) parsing algorithm. CoStar is sound and complete for all non-left-recursive grammars; it produces a correct parse tree for its input whenever such a tree exists, and it correctly detects ambiguous inputs. CoStar also provides strong termination guarantees; it terminates without error on all inputs when applied to a non-left-recursive grammar. Finally, CoStar achieves linear-time performance on a range of unambiguous grammars for commonly used languages and data formats.</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+        </main>
+    </body>
+</html>
+
+        </p>
+    
+        <p>
+            <!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/schedule.css" />
+    </head>
+    <body>
+        <main role="main">
             <h1>2024-fall</h1>
                 <table style="width:100%;">
         <colgroup>
