@@ -1,0 +1,22 @@
+#-
+#  - Name
+#  - Date Time@Location
+#  - Title
+#  - "url"
+#  - >
+#    Abstract
+-
+  - Matthew Keenan
+  - August 1st, 4-5pm in 4941 BBB
+  - "homotopy.io: a proof assistant for finitely-presented globular n-categories"
+  - "https://arxiv.org/abs/2402.13179"
+  - >
+    We present the proof assistant this http URL (https://homotopy.io/) for working with finitely-presented
+    semistrict higher categories. The tool runs in the browser with a point-and-click
+    interface, allowing direct manipulation of proof objects via a graphical
+    representation. We describe the user interface and explain how the tool can be
+    used in practice. We also describe the essential subsystems of the tool, including
+    collapse, contraction, expansion, typechecking, and layout, as well as key
+    implementation details including data structure encoding, memoisation, and rendering.
+    These technical innovations have been essential for achieving good performance in a
+    resource-constrained setting. 
