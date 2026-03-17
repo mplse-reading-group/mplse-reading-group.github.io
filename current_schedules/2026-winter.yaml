@@ -25,3 +25,21 @@
     normalization theorem for our core calculus. We have implemented
     controlled unfolding in the cooltt proof assistant, inspiring an
     independent implementation in Agda.
+-
+  - Alexander Bandukwala
+  - April 9th, 10-11:30am@4901 BBB
+  - "Unison: yesterday's tomorrow, today"
+  - "https://www.unison-lang.org/"
+  - >
+    Unison is a statically-typed, functional programming language that
+    takes a fundamentally different approach to code organization by
+    storing programs in a database rather than as text files. Its most
+    distinctive innovation is content-addressed code — using hashes
+    instead of names for references — which eliminates an entire class
+    of dependency conflicts. The language also introduces "abilities"
+    for effect handling, enabling elegant distributed programming where
+    computations can be seamlessly moved across network boundaries with
+    automatic dependency deployment. Unison supports live refactoring
+    with continuous typechecking and direct value serialization,
+    fundamentally rethinking how modern software development workflows
+    operate.
